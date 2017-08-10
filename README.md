@@ -21,9 +21,3 @@ Manual tab indexes should be avoided: they also create "jumps" that unexpectedly
 **Disable inputs outside of the current form.** If the `select` input field has no `option`s besides the default "Select a {Field Name}", the user will be moved to the most previous input select that has options. Selecting an option in that previous input should correctly populate the option-less `select`.
 
 **Reset inputs when leaving current form.** The script adjusts tabindex of elements outside the current form, then resets those inputs' tabindex to the default on leaving the form. We'll use `tabindex="-2"` for those elements and not change `tabindex="-1"`: devs can still write forms to skip inputs without interference from this script.
-
-## Test Here
-_Must be local or onVPN - iOS, iPad, iPhone, iPod Touch), test in both Chrome / Safari_
-
-* http://devcon1.staging.bestcolleges.com/features/best-colleges-in-texas/ (EduWidget w/ empty Category & Subjects)
-* http://www.medicalbillingandcoding.org/south-dakota/ (Multiple forms & individual inputs throughout page)
